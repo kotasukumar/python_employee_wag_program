@@ -3,12 +3,14 @@ import random
 
 def check_attendence(random_number):
     if random_number == 0:
-        return "Absent"
+        daily_wage = 8 * 20
     else:
-        return "Present"
+        daily_wage = 0
+
+    return daily_wage
 
 
 if __name__ == "__main__":
     random = random.randint(0, 1)
-    attendence = check_attendence(random)
-    print(attendence)
+    wage = check_attendence(random)
+    print(wage)
